@@ -164,22 +164,25 @@ function numerosEnteros(){
     let arregloNumero = document.querySelector('#ingreso_numeros');
     let arregloSplit = arregloNumero.value.split(',');
     let imprimirNumber = document.querySelector('#imprimir_numero');
+    let sumaPar = 0;
 
-    let arregloPar = arregloSplit.filter(numero => numero % 2 === 0);
-    let arregloInpar = arregloSplit.filter(numero => numero % 2 !== 0);
+    let arregloPar = arregloSplit.map(numero =>{
+        if(numero % 2 === 0){console.log(numero); sumaPar += numero;}});
+    let arregloInpar = arregloSplit.filter(numero => numero % 15 === 0);
     let arregloPostive = arregloSplit.filter(numero => numero > 0);
     let arregloNegative = arregloSplit.filter(numero => numero < 0);
 
-    imprimirNumber.innerHTML = `Numeros negativos: ${arregloNegative.length} <br> Numeros positivos: ${arregloPostive.length}`; 
-
-    
-
-
-
-
-   
-
-
-   
+    imprimirNumber.innerHTML = `Numeros negativos: ${arregloNegative.length} <br> Numeros positivos: ${arregloPostive.length} <br> Numero multiplos de 15: ${arregloInpar.length} <br> Suma de numero pares: ${sumaPar}`; 
 
 } 
+
+//Ejercicio 10
+
+function promediarEdades(){
+    let morning = document.querySelector('#morning');
+    let tarde = document.querySelector('#tarde');
+    let noche = document.querySelector('#noche');
+    let arregloSplitM = morning.value.split(',');
+    let arregloSplitT = morning.value.split(',');
+    let arregloSplitN = morning.value.split(',');
+}
