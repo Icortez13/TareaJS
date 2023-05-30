@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <header>
+        <h1>Datos del empleado</h1>
+    </header>
+    <main>
+        <label for="nombre_empleado">Nombre del empleado</label>
+        <input type="text" placeholder="Introduzca nombre de empleado" id="nombre_empleado">
+        <br>
+        <label for="salario_empleado">Salario del empleado</label>
+        <input type="text" placeholder="Introduzca salario de empleado" id="salario_empleado">
+        <br>
+        <label for="select_categoria">Seleccione la categoria</label>
+        <select name="categoria" onchange="selectCategoria()" id="categoria">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+
+        <h1 id="datos_empleado"></h1>
+    </main>
+    
+</body>
+<script src="./assets/desarrollo.js"></script>
+</html>

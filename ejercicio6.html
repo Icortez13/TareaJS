@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <Header>
+        <h1>Elija su destino</h1>
+    </Header>
+    <main>
+        <label for="costo">Costo del viaje</label>
+        <input type="text" placeholder="Intruduzca costo" id="costo">
+        <br>
+        <label>Elija ciudad de origen</Label>
+        <select name="origen" id="origen">
+             <option value="La palma">La palma</option>
+        </select>
+        <br>
+        <label for="destino">Elija ciudad de destino</label>
+        <select name="destino" onchange="calcularViaje()" id="destino">
+            <option value="Costa del sol">Costa del sol</option>
+            <option value="Panchimalco">Panchimalco</option>
+            <option value="Puerto el triunfo">Puerto el triunfo</option>
+      </select>
+
+      <h2 id="imprimir_destino"></h2>
+    </main>
+    
+</body>
+<script src="./assets/desarrollo.js"></script>
+</html>

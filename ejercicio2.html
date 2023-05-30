@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <h1>Datos del estudiante</h1>
+    </header>
+    <main>
+        <label for="nombre_estudiante">Nombre del estudiante</label>
+        <input type="text" placeholder="Nombre de estudiante" class="estudent_name">
+        <br>
+        <label for="carnet_estudiante">Carnet estudiante</label>
+        <input type="text" placeholder="Carnet de estudiante" class="estudent_carnet">
+        <br>
+        <label for="nota_examen">Ingrese la nota de examen</label>
+        <input type="text" placeholder="Nota Examen" class="nota_examen">
+        <br>
+        <label for="nota_tareas">Ingrese la nota de tareas</label>
+        <input type="text" placeholder="Nota tareas" class="nota_tareas">
+        <br>
+        <label for="nota_asistencia">Ingrese la nota de asistencia</label>
+        <input type="text" placeholder="Nota asistencia" class="nota_asistencia">
+        <br>
+        <label for="nota_investigacion">Ingrese la nota de investigacion</label>
+        <input type="text" placeholder="Nota investigacion" class="nota_investigacion">
+        <br>
+        <button onclick="calcularNota()">Calcular</button>
+
+        <h1 id="text_result"></h1>
+    </main>
+</body>
+<script src="./assets/desarrollo.js"></script>
+</html>
